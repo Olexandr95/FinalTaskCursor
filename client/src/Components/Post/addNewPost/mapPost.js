@@ -1,7 +1,7 @@
 import React from "react";
 import PostsF from "./posts";
 import { useSelector } from "react-redux";
-import { postsSelector } from "../../../redax/postsRuducer";
+import { postsSelector } from "../../../redax/reducers/postsRuducer";
 
 export default function MapPosts() {
   const post = useSelector(postsSelector);

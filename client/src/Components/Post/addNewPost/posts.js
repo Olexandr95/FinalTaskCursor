@@ -6,13 +6,12 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { faRetweet } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-//import "../Post/post-scss.scss";
 import { useDispatch } from "react-redux";
 import {
   changeStateLikes,
   changeStateReposts,
   changeStateComments,
-} from "../../../redax/actions";
+} from "../../../redax/actions/postActions";
 
 const PostsF = ({ post }) => {
   const dispatch = useDispatch();

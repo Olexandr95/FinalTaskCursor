@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./form.scss";
 import { v4 as uuid } from 'uuid';
-import { createPost } from "../../../redax/actions";
+import { createPost } from "../../../redax/actions/postActions";
 import { useSelector, useDispatch } from "react-redux";
-import { postsSelector, usersSelector } from "../../../redax/postsRuducer";
+import { postsSelector, usersSelector } from "../../../redax/reducers/postsRuducer";
 
 const PostForm = () => {
   const [selectUser, setSelectUser] = useState("");

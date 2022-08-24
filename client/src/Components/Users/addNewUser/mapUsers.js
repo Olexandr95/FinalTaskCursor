@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import UserField from "./users";
 import { useSelector } from "react-redux";
-import { UsersSelector } from "../../../redax/usersReducer";
+import { UsersSelector } from "../../../redax/reducers/usersReducer";
 import { useDispatch } from "react-redux";
-import { getApiUsers } from "../../../redax/actions";
+import { getApiUsers } from "../../../redax/actions/usersActions";
 
 export default function MapUsers() {
   const users = useSelector(UsersSelector);

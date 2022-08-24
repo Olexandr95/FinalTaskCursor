@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./users.scss";
 import { v4 as uuid } from "uuid";
-import { saveUser, getApiUsers } from "../../../redax/actions";
+import { saveUser, getApiUsers } from "../../../redax/actions/usersActions";
 import { useSelector, useDispatch } from "react-redux";
-import { UsersSelector } from "../../../redax/usersReducer";
+import { UsersSelector } from "../../../redax/reducers/usersReducer";
 import { Stack, TextField, Box, Typography, Button } from "@mui/material";
 
 const UserForm = () => {
