@@ -1,0 +1,45 @@
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.content-box {
+  width: 100%;
+  height: 250px;
+}
+.img1 {
+  background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2022/07/owk-sound-design-tall-v4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 530px;
+  border-radius: 10px;
+}
+.img2 {
+  background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2022/01/disney-lucasfilm-first-join-forces-build-the-future_TALL-1024x576.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 340px;
+  border-radius: 10px;
+}
+.img3 {
+  background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2022/07/borssk-halcyon5.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 340px;
+  border-radius: 10px;
+}
+.title,
+.parag {
+  color: white;
+  text-align: left;
+}
+.title {
+  color: #fff;
+  text-align: center;
+}

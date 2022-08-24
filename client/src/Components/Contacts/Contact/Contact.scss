@@ -1,0 +1,33 @@
+.contact-conteiner {
+  display: grid;
+  max-width: 400px;
+  min-width: 320px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 10fr 1fr;
+  border: 2px solid black;
+  margin-bottom: 5px;
+  background-color: grey;
+  border-radius: 10px;
+
+  .contact-title {
+    font-weight: 500;
+    margin-top: 5px;
+  }
+}
+.contact-gender:hover {
+  color: skyblue;
+}
+.conteiner-user-img:hover {
+  color: skyblue;
+}
+.conteiner-user-img {
+  width: 50px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.contact-gender {
+  font-size: 48px;
+  margin: 0 auto;
+  margin-right: 10px;
+}

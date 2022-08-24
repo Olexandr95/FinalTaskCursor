@@ -1,0 +1,39 @@
+.conteiner-search-title {
+  color: #fff;
+  text-align: center;
+}
+.conteiner-search {
+  display: grid;
+  width: 400px;
+  margin: 0 auto;
+}
+.search-input {
+  height: 30px;
+  border: 2px solid black;
+  font-size: 16px;
+}
+.flex-center {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 32px;
+  .gender-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .male-icon {
+      color: blue;
+    }
+    .female-icon {
+      color: red;
+    }
+    .nogender {
+      color: rgb(177, 177, 177);
+    }
+  }
+}
+.try {
+  color: #fff;
+  font-size: 48px;
+}

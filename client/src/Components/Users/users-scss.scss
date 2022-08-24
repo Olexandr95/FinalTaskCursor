@@ -1,0 +1,112 @@
+.post_title {
+    color: #fff;
+    text-align: center;
+  }
+  .post-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+  }
+  .post-new-btn {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid #fff;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .post-new-btn:hover {
+    transform: scale(1.2);
+  }
+  .main-conteiner {
+    width: 600px;
+    background-color: rgb(32, 32, 32);
+    color: black;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .left-side-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .right-side-content {
+    width: 550px;
+  }
+  .content-tittle {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .content-main-title {
+    color: #fff;
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .autor-name {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .autor-nickname-date {
+    color: grey;
+    cursor: pointer;
+  }
+  .autor-angle-down {
+    color: grey;
+  }
+  .autor-angle-down:hover {
+    color: #fff;
+  }
+  .content-main-img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  
+  .content-footer-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: 20px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  .comment-icon:hover {
+    color: skyblue;
+    cursor: pointer;
+  }
+  .repost-icon:hover {
+    color: greenyellow;
+    cursor: pointer;
+  }
+  .like-icon:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .share-icon:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  
