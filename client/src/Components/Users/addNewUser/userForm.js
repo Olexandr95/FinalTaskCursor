@@ -4,12 +4,19 @@ import { v4 as uuid } from "uuid";
 import { saveUser, getApiUsers } from "../../../redax/actions/usersActions";
 import { useSelector, useDispatch } from "react-redux";
 import { UsersSelector } from "../../../redax/reducers/usersReducer";
-import { Stack, TextField, Box, Typography, Button } from "@mui/material";
+import { Stack, Box, Typography, Button } from "@mui/material";
+import { CssTextField } from "../../TextField/textField";
 
 const UserForm = () => {
   const [inputName, setInputName] = useState("");
   const [inputNickName, setInputNickName] = useState("");
   const [inputPhoto, setInputPhoto] = useState("");
+
+  const cleanedInputs = () => {
+    setInputName("");
+    setInputNickName("");
+    setInputPhoto("");
+  };
 
   const users = useSelector(UsersSelector);
   const id = uuid();
@@ -40,6 +47,7 @@ const UserForm = () => {
 
     dispatch(saveUser("http://localhost:4004/users", user));
     dispatch(getApiUsers("http://localhost:4004/users", user));
+    cleanedInputs();
   };
 
   useEffect(() => {
@@ -53,33 +61,31 @@ const UserForm = () => {
             <Typography>User Form</Typography>
           </div>
 
-          <Stack spacing={2} fullwidth>
-            <TextField
+          <Stack spacing={2}>
+            <CssTextField
               label="User Name"
               variant="outlined"
               required
               value={inputName}
               onChange={handleSelectName}
               color={!inputName.trim() ? "primary" : "success"}
-              focused
             />
-            <TextField
+
+            <CssTextField
               label="Nickname"
               variant="outlined"
               required
               value={inputNickName}
               onChange={handleSelectNickName}
               color={!inputNickName.trim() ? "primary" : "success"}
-              focused
             />
-            <TextField
+            <CssTextField
               label="URL user photo"
               variant="outlined"
               required
               value={inputPhoto}
               onChange={handleSelectPhoto}
               color={!inputPhoto.trim() ? "primary" : "success"}
-              focused
             />
             <Button variant="contained" color="success" onClick={handleSubmit}>
               Create User

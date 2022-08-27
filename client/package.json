@@ -2,7 +2,7 @@
   "name": "react-redax-basic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olexandr95.github.io/React-redax-basic",
+  "homepage": "https://olexandr95.github.io/FinalTaskCursor",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",

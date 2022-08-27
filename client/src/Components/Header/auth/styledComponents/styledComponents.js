@@ -13,7 +13,7 @@ export const SecondaryText = styled.p`
 `;
 
 export const BodyDiv = styled.div`
-  background-color: rgb(10, 30, 40);
+  background-color: rgb(32,32,32);
   height: auto;
   width: 500px;
   margin: 0 auto;

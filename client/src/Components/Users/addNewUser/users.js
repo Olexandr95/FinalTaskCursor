@@ -1,20 +1,8 @@
+import React from "react";
 import "./users.scss";
-import { useDispatch, useSelector } from "react-redux";
-import { UsersSelector } from "../../../redax/reducers/usersReducer";
-import { getApiUsers, deleteApiUsers } from "../../../redax/actions/usersActions";
 
-const UserField = ({ users }) => {
+const UserField = ({ users, onDelete }) => {
   const { inputName, inputNickName, inputPhoto, date, _id } = users;
-  const post = useSelector(UsersSelector);
-
-  const dispatch = useDispatch();
-  const deleteItem = (e) => {
-    console.log(e.target.id)
-    let id = e.target.id;
-    console.log(post.filter((el)=>el._id===id))
-    console.log(`http://localhost:4004/users/${id}`)
-    dispatch(deleteApiUsers(`http://localhost:4004/users/${id}`));
-  }
 
   return (
     <div className="main-conteiner">
@@ -29,7 +17,9 @@ const UserField = ({ users }) => {
               @{inputNickName} {date}
             </span>
           </div>
-          <div id={_id} onClick={deleteItem}> x
+          <div id={_id} onClick={onDelete}>
+            {" "}
+            x
           </div>
         </div>
       </div>
